@@ -15,9 +15,8 @@
 <![endif]-->
 </head>
 
-<body id="top">
+<body class="s-n">
 
-<div id="topcontents">
 <div class="inner">
 
 <header>
@@ -26,72 +25,110 @@
 </div>
 </header>
 
-<!--トップページ専用メニュー-->
-<nav id="menubar-top">
+<!--PC用（801px以上端末）メニュー-->
+<nav id="menubar">
 <ul class="inner">
 <li><a href="index.html"><span>Home</span>ホーム</a></li>
 <li><a href="company.html"><span>Company</span>会社概要</a></li>
 <li><a href="service.html"><span>Service</span>サービス案内</a></li>
 <li><a href="recruit.html"><span>Recruit</span>採用情報</a></li>
 <li><a href="link.html"><span>Link</span>リンク</a></li>
-<li><a href="contact.html"><span>Contact</span>コンタクト</a></li>
+<li class="current"><a href="contact.html"><span>Contact</span>コンタクト</a></li>
+</ul>
+</nav>
+<!--小さな端末用（800px以下端末）メニュー-->
+<nav id="menubar-s">
+<ul>
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社概要</a></li>
+<li><a href="service.html">サービス案内</a></li>
+<li><a href="recruit.html">採用情報</a></li>
+<li><a href="link.html">リンク</a></li>
+<li><a href="contact.html">コンタクト</a></li>
 </ul>
 </nav>
 
 </div>
 <!--/inner-->
-</div>
-<!--/topcontents-->
 
-<div class="contents bg1">
+<div class="contents">
 <div class="inner">
 
-<section id="new">
-<h2 id="newinfo_hdr" class="close">更新情報・お知らせ<span>What's New</span></h2>
-<dl id="newinfo">
-<dt>2017/08/26</dt>
-<dd>tp_biz47公開。<span class="newicon">NEW</span></dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-<dt>20XX/00/00</dt>
-<dd>サンプルテキスト。サンプルテキスト。サンプルテキスト。</dd>
-</dl>
-</section>
+<div class="main">
 
 <section>
 
-<h2>テンプレートのご利用前に必ずお読み下さい<span>Read Me</span></h2>
+<h2>お問い合わせフォーム<span>Contact</span></h2>
 
-<h3>利用規約のご案内</h3>
-<p>このテンプレートは、<a href="http://template-party.com/">Template Party</a>にて無料配布している『ビジネスサイトサイト向け 無料ホームページテンプレート tp_biz47』です。必ずダウンロード先のサイトの<a href="http://template-party.com/read.html">利用規約</a>をご一読の上でご利用下さい。</p>
-<p><strong class="color1">■HP最下部の著作表示『Web Design:Template-Party』は無断で削除しないで下さい。</strong><br>
-わざと見えなく加工する事も禁止です。</p>
-<p><strong class="color1">■下部の著作を外したい場合は</strong><br>
-<a href="http://template-party.com/">Template-Party</a>の<a href="http://template-party.com/member.html">ライセンス契約</a>を行う事でHP下部の著作を外す事ができます。</p>
-
-<h3 style="color: red;">※当テンプレートにはお問い合わせフォーム（自動フォーム：試用版）がセットされています</h3>
-<p><a href="contact.html">contact.html</a>と同じ３項目のお問い合わせフォームを簡単に使えるようにセットしています。</p>
-<p><strong class="color1">■自動フォームを使う場合（※編集に入る前にご確認下さい）</strong><br>
-あなたのメールアドレス設定と、簡単な編集だけで使えます。<a href="http://template-party.com/file/formgen_manual_set2.html" target="_blank">詳しくはこちらのマニュアルをご覧下さい。</a></p>
-<p><strong class="color1">■自動フォームを使わない場合</strong><br>
-テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。</p>
-
-<h3>メニューなどの開閉ブロック（openclose.js）について</h3>
-<p>当テンプレートの開閉ブロックパーツは<a href="http://www.crytus.co.jp/">有限会社クリタス様</a>提供のプログラムを使用しています。openclose.jsファイルは改変せずにご利用下さい。<br>
-また、当サイトのテンプレート以外に使いたいなど、「プログラムのみ」を使う場合は<a href="http://template-party.com/free_program/openclose_license.html">こちらの規約</a>をお守り下さい。</p>
-
-<h3>当テンプレートの詳しい使い方は</h3>
-<p><a href="company.html#about">こちらをご覧下さい。</a></p>
+<!-- フォームの情報はここからです -->
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="form">
+<table class="ta1">
+<!-- 入力／確認 -->
+<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
+<tr>
+<th width="150">お名前<span style="color:red">※</span></th>
+<td>
+<input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
+</td>
+</tr>
+<tr>
+<th width="150">メールアドレス<span style="color:red">※</span></th>
+<td>
+<input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
+</td>
+</tr>
+<tr>
+<th>お問い合わせ内容<span style="color:red">※</span></th>
+<td>
+<textarea name="item3" cols="40" rows="10" class="wl"><?php echo $form["item3"]; ?></textarea>
+<?php if ($msg["item3"]) echo '<div style="color:red">' . $msg["item3"] . '</div>'; ?>
+</td>
+</tr>
+</table>
+<div class="c">
+<input type="submit" value="内容を確認する">
+&nbsp;
+<input type="reset" value="リセット">
+</div>
+</form>
+<!-- フォームの情報はここまでです -->
 
 </section>
+
+</div>
+<!--/main-->
+
+<div class="sub">
+
+<nav class="box1">
+<h2>Menu</h2>
+<ul class="submenu">
+<li><a href="index.html">ホーム</a></li>
+<li><a href="company.html">会社概要</a></li>
+<li><a href="service.html">サービス紹介</a></li>
+<li><a href="recruit.html">採用情報</a></li>
+<li><a href="link.html">リンク</a></li>
+<li><a href="contact.html">お問い合わせ</a></li>
+</ul>
+</nav>
+
+<div class="box1">
+<h2>この見出しはh2タグです</h2>
+<p>このボックスは、class="box1"と指定すれば出ます。</p>
+</div>
+
+<h2>Access</h2>
+<div class="box1">
+<strong>TEL:00-0000-0000</strong><br>
+<span class="mini1">受付：00:00〜00:00<br>
+定休日：水曜日</span>
+</div>
+
+</div>
+<!--/sub-->
 
 </div>
 <!--/inner-->
