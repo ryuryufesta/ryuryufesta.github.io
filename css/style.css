@@ -125,6 +125,7 @@ section h2{
 	width: 60%;
 	margin: 0 auto;
 	padding-bottom: 80px;
+	text-align: center;
 }
 
 
@@ -222,6 +223,9 @@ section h2{
 ------------------------------------------------------------*/
 
 @media only screen and (min-width: 1200px){
+	#header{
+		margin-top:65px;		
+	}
 	.inner{
 		width: 1024px;
 		padding-bottom: 120px;
@@ -238,10 +242,10 @@ section h2{
 	body{
 		font-size:14px;
 	}
-	
+
   a#menu{
 		display:none;
-	}	
+	}
 
 	.panel{
 		display:block !important;
@@ -265,16 +269,16 @@ section h2{
 		font-size: 14px;
 		font-weight: 300;
 	}
-	
+
   #mainnav a{
 		color: #000;
 	}
-	
+
 	#mainnav.changeNav{
 		background: rgba(255,255,255,.9);
 		border-bottom: 1px solid #d1d1d1;
 	}
-	
+
 	#mainnav.changeNav li{
 		padding: 20px 10px;
 	}
@@ -297,7 +301,7 @@ section h2{
 		padding: 0 100px;
 		vertical-align: middle;
 	}
-	
+
 	/* SEC03 SERVICE MESSAGE STORY
 	-----------------*/
 	.col3{
@@ -312,13 +316,13 @@ section h2{
 		vertical-align: top;
 		text-align: left;
 	}
-	
+
 	/* SEC05 PROFILE
 	-----------------*/
 	#sec05{
 		padding-top: 120px;
 	}
-	
+
   #footer{
 		padding: 30px 10px 70px 0;
 	}
