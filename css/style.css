@@ -118,6 +118,20 @@ section h2{
   	margin: 20px 0 20px 0;
 }
 
+.contents {
+	clear: both;
+	overflow: hidden;
+	padding: 40px 10px;	/*上下、左右に空けるボックス内の余白*/
+}
+
+.inner {
+	width: auto;
+}
+
+.inner {
+	max-width: 1200px;	/*サイトの最大幅*/
+	margin: 0 auto;
+}
 
 /* SEC01 VISION
 ------------------------------------------------------------*/
@@ -225,7 +239,7 @@ section h2{
 
 @media only screen and (min-width: 1200px){
 	#header{
-		margin-top:65px;		
+		margin-top:65px;
 	}
 	.inner{
 		width: 1024px;
@@ -244,7 +258,7 @@ section h2{
 		font-size:14px;
 	}
 
-  a#menu{
+  #menu{
 		display:none;
 	}
 
@@ -345,12 +359,28 @@ section h2{
 }
 
 @media only screen and (max-width: 799px){
+	#slogan{
+		position: absolute;
+	  top: 50%;
+		width: 100%;
+		-webkit-transform: translate(0, -50%);
+	  transform: translate(0, -50%);
+		color: #000;
+		line-height: 1.2;
+		text-align: center;
+	}
+
 	#slogan h1{
+		position: absolute;
 		font-size: 31px;
+		color: #000;
+		top: -180px;
 	}
 
 	#slogan h2{
+		position: absolute;
 		font-size: 16px;
+		top: -140px;
 	}
 
   a#menu{
