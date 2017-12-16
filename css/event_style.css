@@ -120,22 +120,36 @@ ul.foo li a {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#stand{
+	padding-top: 120px;
+}
+#stage{
+	padding-top: 120px;
+}
+#ryugaku{
+	padding-top: 120px;
+}
+#money{
+	padding-top: 120px;
+}
+#language{
+	padding-top: 120px;
+}
+#school{
+	padding-top: 120px;
+}
+#foregin{
+	padding-top: 120px;
+}
+#company{
+	padding-top: 120px;
+}
+#bazaar{
+	padding-top: 120px;
+}
+#adult{
+	padding-top: 120px;
+}
 
 
 /* フッター
