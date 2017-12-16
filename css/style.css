@@ -359,28 +359,12 @@ section h2{
 }
 
 @media only screen and (max-width: 799px){
-	#slogan{
-		position: absolute;
-	  top: 50%;
-		width: 100%;
-		-webkit-transform: translate(0, -50%);
-	  transform: translate(0, -50%);
-		color: #000;
-		line-height: 1.2;
-		text-align: center;
-	}
-
 	#slogan h1{
-		position: absolute;
 		font-size: 31px;
-		color: #000;
-		top: -180px;
 	}
 
 	#slogan h2{
-		position: absolute;
 		font-size: 16px;
-		top: -140px;
 	}
 
   a#menu{
