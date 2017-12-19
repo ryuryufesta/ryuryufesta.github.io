@@ -164,7 +164,12 @@ ul.foo li a {
 
 /* 共通
 ------------------------------------------------------------*/
-h1, h2{
+h1{
+	font-size: 7;
+	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+}
+
+h2{
 	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
 }
 
