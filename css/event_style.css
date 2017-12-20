@@ -164,14 +164,12 @@ ul.foo li a {
 
 /* 共通
 ------------------------------------------------------------*/
-h1{
-	font-size: 44px;
-	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+h1 {
+	font-size: 40px;
 }
-
-h2{
+/* h1, h2{
 	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
-}
+} */
 
 img{
 	width: 100%;
