@@ -345,8 +345,8 @@ section h2{
 
 @media only screen and (min-width: 641px){
 	.col2 li{
-		width: 30%;
-		padding: 0 1%;
+		width: 40%;
+		padding: 0 3%;
 		vertical-align: top;
 	}
 }
