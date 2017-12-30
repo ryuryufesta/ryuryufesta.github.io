@@ -34,46 +34,121 @@ a:hover, .active{
 
 a:active, a:focus,input:active, input:focus{outline:0;}
 
+/* ブースリスト */
+ul.foo {
+    display:table;
+    table-layout:fixed;
+    width:1025px;
+    padding-bottom: 40px;
+}
+ul.foo li {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    background: #eee;
+    border-left:5px solid white;
+}
+ul.foo li:first-child {
+    border:none;    
+}
+ul.foo li a {
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+.foo li :hover {
+	background: #C0C0C0;	/*背景色*/
+	color: #000;			/*文字色*/
+}
 
-/* ヘッダー
-------------------------------------------------------------*/
-#header{
+/*EVENTページの各ブロック
+---------------------------------------------------------------------------*/
+/*各ボックスの設定*/
+.list {
 	position: relative;
-    overflow:hidden;
-    width:100%;
-    height:568px;
+	overflow: hidden;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;	/*下線の幅、線種、色*/
 }
-
-#header img{
-    position:absolute;
-    left:50%;
-    width:1280px;
-    height:568px;
-    margin-left:-640px;
+.list a {
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+	padding: 20px;
+	margin: -20px;
 }
-
-
-#slogan{
+/*マウスオン時の背景色*/
+.list a:hover {
+	background: #eee;	/*背景色*/
+	color: #000;			/*文字色*/
+}
+/*リンクを貼った際に出る「→」マーク*/
+.list a::before {
+	content: "→";	/*出力する文字。変更しても構いませんが機種依存文字は化けるので使わないで下さい。*/
+	font-size: 12px;	/*文字サイズ*/
+	display: block;
 	position: absolute;
-  top: 50%;
-	width: 100%;
-	-webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-	color: #fff;
-	line-height: 1.2;
+	right: 10px;	/*ボックスの右から10pxの場所に配置*/
+	bottom: 20px;	/*ボックスの下から20pxの場所に配置*/
+	width: 30px;	/*幅*/
+	line-height: 30px;	/*高さ*/
 	text-align: center;
+	background: #333;	/*背景色（古いブラウザ用）*/
+	color: #fff;	/*文字色*/
+	border-radius: 50%;	/*角丸のサイズ。50%にすると円になる。*/
+}
+/*ボックス内のh4タグ設定*/
+.list h4 {
+	font-size: 20px;	/*文字サイズ*/
+	color: #000;	/*文字色*/
+}
+.list a:hover h4 {
+	color: #000;	/*マウスオン時*/
+} 
+/*ボックス内のp(段落)タグ設定*/
+.list p {
+	padding: 0 20px 0 0 !important;
+	color: #666;
+}
+/*ボックス内の画像*/
+.list figure img {
+	float: left;	/*左に回り込み*/
+	width: 20%;		/*幅*/
+	height: auto;		/*高さ*/
+	border-radius: 8px;	/*角丸のサイズ*/
+	margin-right: 20px;	/*画像右側にあけるスペース*/
 }
 
-#slogan h1{
-	font-size: 40px;
-	font-family: 'Pacifico', cursive;
-	margin-bottom: 20px;
-	font-weight:normal;
-}
 
-#slogan h2{
-	font-size: 20px;
-	font-weight:normal;
+#stand{
+	padding-top: 120px;
+}
+#stage{
+	padding-top: 120px;
+}
+#ryugaku{
+	padding-top: 120px;
+}
+#money{
+	padding-top: 120px;
+}
+#language{
+	padding-top: 120px;
+}
+#school{
+	padding-top: 120px;
+}
+#foregin{
+	padding-top: 120px;
+}
+#company{
+	padding-top: 120px;
+}
+#bazaar{
+	padding-top: 120px;
+}
+#adult{
+	padding-top: 120px;
 }
 
 
@@ -89,7 +164,12 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 /* 共通
 ------------------------------------------------------------*/
-h1, h2{
+h1{
+	font-size: 44px;
+	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
+}
+
+h2{
 	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
 }
 
@@ -132,107 +212,6 @@ section h2{
 	max-width: 1200px;	/*サイトの最大幅*/
 	margin: 0 auto;
 }
-
-/* SEC01 VISION
-------------------------------------------------------------*/
-
-.vision{
-	width: 60%;
-	margin: 0 auto;
-	padding-bottom: 80px;
-	text-align: center;
-}
-
-
-/* SEC02 MESSAGE
-------------------------------------------------------------*/
-.wrap{
-	clear: both;
-	width: 100%;
-	background: #f6f6f6;
-}
-
-.bg{
-	line-height: 0;
-}
-
-.txt h2{
-	padding: 0 0 20px !important;
-}
-
-
-/* SEC03 SERVICE MESSAGE STORY
-------------------------------------------------------------*/
-.col3 li{
-	margin-bottom: 50px;
-}
-
-.col3 img{
-	max-width: 288px;
-	display: block;
-	margin: -5px auto 20px;
-}
-
-
-/* SEC04 STORY & SUCCESS
-------------------------------------------------------------*/
-#sec04{
-	background: url(../images/bgSec04.jpg) no-repeat 100% 100% fixed;
-	background-size: cover;
-	-webkit-background-size: cover;
-	color: #fff;
-}
-
-
-/* SEC05 PROFILE
-------------------------------------------------------------*/
-#sec05{
-	padding-top: 50px;
-}
-
-#sec05 dl{
-	line-height: 1.2;
-}
-
-#sec05 dt{
-	clear: left;
-	float: left;
-	display: block;
-	width: 30%;
-	margin-right: 10%;
-	margin-bottom: 20px;
-	text-align: right;
-	line-height: 1.6em;
-}
-
-#sec05 dd{
-	width: 60%;
-	float: left;
-	text-align: left;
-	margin-bottom: 15px;
-	line-height: 1.6em;
-}
-
-#sec05 header{
-	display: none;
-}
-
-#map{
-	position: relative;
-	padding-bottom: 75%;
-	height: 0;
-	overflow: hidden;
-}
-
-#map iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100% !important;
-	height: 100% !important;
-	border: 0;
-}
-
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/

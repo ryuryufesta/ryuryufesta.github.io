@@ -233,6 +233,20 @@ section h2{
 	border: 0;
 }
 
+/*変更*/
+#stand-wrap {
+	width : 80%;
+	margin : 0 auto;
+}
+
+.stand-list li{
+	width: 33.3%;
+	float: left;
+}
+
+.stand-list li img {
+	height: 560px;
+}
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
@@ -251,6 +265,7 @@ section h2{
 	.txt h2{
 		padding: 0 0 20px !important;
 	}
+
 }
 
 @media only screen and (min-width: 800px){
@@ -341,6 +356,7 @@ section h2{
   #footer{
 		padding: 30px 10px 70px 0;
 	}
+
 }
 
 @media only screen and (min-width: 641px){
@@ -349,13 +365,31 @@ section h2{
 		padding: 0 3%;
 		vertical-align: top;
 	}
+
+
+}
+@media only screen and (max-width: 1199px){
+	section h2{
+		padding: 50px 0 20px 0;
+	}
+	#sec01 h2{
+		padding: 70px 0 20px;
+	}
+	.vMid{
+		padding: 0 20px;
+	}
+
+	/*変更*/
+#stand-wrap {
+	width : 80%;
+	margin : 0 auto;
 }
 
-@media only screen and (max-width: 640px){
-	#map iframe{
-	  width: 96% !important;
-		left: 2%;
-	}
+.stand-list li{
+	width: 33.3%;
+	
+	float: left;
+}
 }
 
 @media only screen and (max-width: 799px){
@@ -395,7 +429,7 @@ section h2{
   	left: 0;
   	width: 18px;
   	height: 2px;
-  	background: #fff;
+  	background: #aaa; /* #fff から　変更*/
   	transition: .3s;
 	}
 
@@ -478,16 +512,29 @@ section h2{
 		display: block;
 	max-width: 288px;
 	}
+
+						/*変更*/
+.stand-list li{
+	width: 49%;
+	float: left;
 }
 
-@media only screen and (max-width: 1199px){
-	section h2{
-		padding: 50px 0 20px 0;
-	}
-	#sec01 h2{
-		padding: 70px 0 20px;
-	}
-	.vMid{
-		padding: 0 20px;
-	}
 }
+
+@media only screen and (max-width: 640px){
+	#map iframe{
+	  width: 96% !important;
+		left: 2%;
+	}
+
+	.stand-list li{
+		width: 100%;
+		float : left;
+	}
+
+	.stand-list li img {
+	height: auto;
+}
+}
+
+
