@@ -126,9 +126,9 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 h1 {
 	font-size: 40px
 }
-/* h1, h2{
+h2{
 	font-family: 'Josefin Sans', 'Noto Sans JP',serif;
-} */
+}
 
 img{
 	width: 100%;
