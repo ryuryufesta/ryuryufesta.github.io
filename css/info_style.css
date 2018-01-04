@@ -34,7 +34,33 @@ a:hover, .active{
 
 a:active, a:focus,input:active, input:focus{outline:0;}
 
-
+/* ページ内リンク */
+ul.foo {
+	margin : 0 auto;
+    display:table;
+    table-layout:fixed;
+    width:1025px;
+    padding-bottom: 40px;
+}
+ul.foo li {
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+    background: #eee;
+    border-left:5px solid white;
+}
+ul.foo li:first-child {
+    border:none;    
+}
+ul.foo li a {
+    display:block;
+    text-decoration:none;
+    color:black;
+}
+.foo li :hover {
+	background: #C0C0C0;	/*背景色*/
+	color: #000;			/*文字色*/
+}
 /* ヘッダー
 ------------------------------------------------------------*/
 #header{
