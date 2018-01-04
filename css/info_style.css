@@ -34,6 +34,31 @@ a:hover, .active{
 
 a:active, a:focus,input:active, input:focus{outline:0;}
 
+
+
+/* 語学学校のテーブル */
+/*
+.school-table .title { 
+	width: 50px;
+	font-weight: bold;
+	vertical-align: top;
+}
+.shcool-table td {
+  text-align: center;
+}*/
+.gray {
+	background-color: #f6f6f6;
+}
+.school-column {
+	margin : 0 auto;
+	margin-bottom: 30px;
+	padding : 30px;
+	width : 80%;
+}
+
+#school-section {
+	/*width : 90%;*/
+}
 /* ページ内リンク */
 ul.foo {
 	margin : 0 auto;
