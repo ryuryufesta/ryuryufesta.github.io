@@ -36,30 +36,70 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 
 
-/* 語学学校のテーブル */
-/*
-.school-table .title { 
-	width: 50px;
+
+/* 語学学校のテーブル 
+------------------------------------------------------------*/
+
+/* font awesome*/
+.fa-small {
+  font-size: 0.3em;
+  /*0.8倍の大きさに*/}
+
+.school-name a{
+	color : black;
+	font-size: 30px;
+	font-family : 'Josefin Sans', 'Noto Sans JP',serif;
+}
+/* リンク先にマウスオーバーすると赤くなる */
+.school-name a:hover{
+	color : red;
+}
+/* 特典の項目を赤くする　*/
+.tokuten {
+	color: red;
+}
+
+.school-table .headline { 
+	width: 130px;
 	font-weight: bold;
 	vertical-align: top;
+	text-align: left;
 }
-.shcool-table td {
-  text-align: center;
-}*/
+table {
+	border-spacing: 0;
+}
+.school-table tr {
+	border-bottom: 1px dashed #999;
+
+}
+
+.school-table th,.school-table td {
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+
+.school-column {
+	margin : 0 auto;
+	margin-top: 30px;
+	padding : 30px;
+	width : 70%;
+}
+/* 紹介文がないところを幅無理やり大きくする */
+.school-table .empty {
+	width : 878px;
+}
+/* 奇数のコラムは背景をグレーにする */
 .gray {
 	background-color: #f6f6f6;
 }
-.school-column {
-	margin : 0 auto;
-	margin-bottom: 30px;
-	padding : 30px;
-	width : 80%;
-}
 
-#school-section {
-	/*width : 90%;*/
-}
-/* ページ内リンク */
+
+
+
+
+/* ページ内リンク 
+------------------------------------------------------------*/
 ul.foo {
 	margin : 0 auto;
     display:table;
