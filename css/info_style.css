@@ -87,8 +87,9 @@ table {
 }
 /* 紹介文がないところを幅無理やり大きくする */
 .school-table .empty {
-	width : 878px;
+	opacity: 0;
 }
+
 /* 奇数のコラムは背景をグレーにする */
 .gray {
 	background-color: #f6f6f6;
@@ -104,7 +105,7 @@ ul.foo {
 	margin : 0 auto;
     display:table;
     table-layout:fixed;
-    width:1025px;
+    width:70%;
     padding-bottom: 40px;
 }
 ul.foo li {
@@ -353,6 +354,7 @@ section h2{
 }
 
 @media only screen and (min-width: 800px){
+
 	body{
 		font-size:14px;
 	}
@@ -445,7 +447,11 @@ section h2{
 		padding: 30px 10px 70px 0;
 	}
 }
-
+@media only screen and (min-width: 767px){
+	.school-table .empty:before {
+	content : "-------------------------------------------------------------------------------------------------------------------------------------------------------";
+}
+}
 @media only screen and (min-width: 641px){
 	.col2 li{
 		width: 40%;
@@ -460,8 +466,19 @@ section h2{
 		left: 2%;
 	}
 }
-
+@media only screen and (max-width: 766px){
+	.school-table td, .school-table th {
+		width : 100%;
+		display: block;
+	}
+	.school-table .empty {
+		/*visibility: hidden;*/
+		/*display: none;*/
+		/*width: 100%;*/
+	}
+}
 @media only screen and (max-width: 799px){
+
 	#slogan h1{
 		font-size: 31px;
 	}
@@ -584,6 +601,7 @@ section h2{
 }
 
 @media only screen and (max-width: 1199px){
+
 	section h2{
 		padding: 50px 0 20px 0;
 	}
