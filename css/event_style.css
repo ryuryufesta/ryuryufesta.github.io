@@ -47,6 +47,7 @@ ul.foo li {
     text-align:center;
     background: #eee;
     border-left:5px solid white;
+		white-space: nowrap;		
 }
 ul.foo li:first-child {
     border:none;    
@@ -188,6 +189,7 @@ section h2{
 	width: 94%;
 	margin: 0 auto;
 	padding-bottom: 50px;
+	overflow: scroll;			
 }
 
 .col2 li{
@@ -200,6 +202,10 @@ section h2{
 	clear: both;
 	overflow: hidden;
 	padding: 40px 10px;	/*上下、左右に空けるボックス内の余白*/
+	position: relative;
+	width: auto;
+	max-width: 1200px;	/*サイトの最大幅*/
+	margin: 0 auto;
 }
 
 .inner {
@@ -219,6 +225,10 @@ section h2{
 		margin-top:65px;
 	}
 	.inner{
+		width: 1024px;
+		padding-bottom: 120px;
+	}
+	.contents{
 		width: 1024px;
 		padding-bottom: 120px;
 	}
