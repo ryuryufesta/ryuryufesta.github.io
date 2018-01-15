@@ -383,7 +383,7 @@ section h2{
   	width: 18px;
   	height: 2px;
   	margin: -1px 0 0 -7px;
-  	background: #fff;
+  	background: #00f;
   	transition: .2s;
 	}
 
@@ -395,7 +395,7 @@ section h2{
   	left: 0;
   	width: 18px;
   	height: 2px;
-  	background: #aaa; /* #fff から　変更*/
+  	background: #00f;
   	transition: .3s;
 	}
 
