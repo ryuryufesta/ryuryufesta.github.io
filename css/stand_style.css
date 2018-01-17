@@ -34,6 +34,13 @@ a:hover, .active{
 
 a:active, a:focus,input:active, input:focus{outline:0;}
 
+.box-sizing{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 /* ヘッダー
 ------------------------------------------------------------*/
@@ -247,6 +254,41 @@ section h2{
 .stand-list li img {
 	height: 560px;
 }
+
+#stand-wrap-new {
+	width : 80%;
+	margin : 0 auto;
+}
+
+.stand-list-new > li{
+	box-sizing: content-box;
+	width : 30% ;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 30px;
+	float: left;
+	color : #666;
+}
+.restaurant img {
+	max-width: 300px;
+	height: 200px;
+}
+.country img {
+	max-width: 95px;
+   	height: 60px;
+}
+.country span { 
+	font-size: 30px;
+	font-weight: bold;
+}
+.stand-column .name {
+	font-size: 20px;
+	font-weight: bold;
+	color : #222;
+}
+/*.stand-column {
+	height: 560px;
+}*/
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
