@@ -286,9 +286,9 @@ section h2{
 	font-weight: bold;
 	color : #222;
 }
-/*.stand-column {
-	height: 560px;
-}*/
+.stand-column {
+	height: 650px;
+}
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
@@ -422,16 +422,19 @@ section h2{
 	}
 
 	/*変更*/
-#stand-wrap {
+.stand-column {
+	height : 700px;
+}
+/*#stand-wrap-new {
 	width : 80%;
 	margin : 0 auto;
 }
 
-.stand-list li{
+.stand-list-new li{
 	width: 33.3%;
 	
-	float: left;
-}
+	float: left;*/
+/*}*/
 }
 
 @media only screen and (max-width: 799px){
@@ -556,10 +559,11 @@ section h2{
 	}
 
 						/*変更*/
-.stand-list li{
-	width: 49%;
+.stand-list-new > li{
+	width: 45%;
 	float: left;
 }
+
 
 }
 
@@ -569,14 +573,17 @@ section h2{
 		left: 2%;
 	}
 
-	.stand-list li{
+	.stand-list-new li{
 		width: 100%;
 		float : left;
 	}
 
-	.stand-list li img {
+	.stand-list-new li img {
 	height: auto;
 }
+	.stand-column {
+		height: auto
+	}
 }
 
 
