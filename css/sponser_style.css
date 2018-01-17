@@ -170,6 +170,10 @@ section h2{
 	margin-bottom: 50px;
 }
 
+.col3 h2{
+font-size: 14px;	
+}
+
 .col3 img{
 	max-width: 150px;
 	display: block;
@@ -483,7 +487,7 @@ section h2{
 	.col3 li{
 		margin: 0 auto;
 		display: block;
-		max-width: 150px;
+		max-width: 180px;
 	}
 	
 }
