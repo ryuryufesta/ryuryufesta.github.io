@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+@import url(https://fonts.googleapis.com/css?family=Sawarabi+Mincho);
 
 /* reset */
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
@@ -131,6 +132,41 @@ section h2{
 .inner {
 	max-width: 1200px;	/*サイトの最大幅*/
 	margin: 0 auto;
+}
+
+
+/**
+* SEC00 開催御礼メッセージ
+*/
+
+.message-box {
+	font-family: "Sawarabi Mincho", sans-serif;
+	width: 750px;
+    border: 2px solid #da4033;
+    border-radius: 4px;
+    margin: 5em auto;
+    padding: 2em;
+    position: relative;
+}
+.message-box::before {
+    background-color: #fff;
+    color: #da4033;
+    content: "開催御礼";
+    font-weight: bold;
+	left: 1em;
+	font-size: 2em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.message-box .message-box-inner{
+	margin-bottom: 1rem;
+}
+
+.message-box #member{
+	position: relative;
+	text-align: right;
 }
 
 /* SEC01 VISION
@@ -358,6 +394,7 @@ section h2{
 	}
 }
 
+
 @media only screen and (max-width: 799px){
 	#slogan h1{
 		font-size: 31px;
@@ -365,6 +402,12 @@ section h2{
 
 	#slogan h2{
 		font-size: 16px;
+	}
+
+	.message-box{
+		position: relative;
+		width: 75%;
+		margin: 2em auto;
 	}
 
   a#menu{
